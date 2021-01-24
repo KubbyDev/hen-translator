@@ -1,0 +1,42 @@
+Regulateur:
+0.7V-5.5V -> 5V. Un peu chiant parce qu'il faut un inductor et 200mA
+https://www.mouser.fr/ProductDetail/Texas-Instruments/TPS61222DCKR/?qs=IDSsxkoac0xpx0kmXXJcTA%3D%3D
+
+LDO vers 2V avec un dropout < 0.5V => Chiant pour la SD
+
+--
+
+Pile bouton 3V 235mAh 20mm -> 11 heures 
+https://data.energizer.com/pdfs/cr2032.pdf
+
+--
+
+Arduino pro mini:
+Taille: 18x33 mm
+Consommation: 5 mA (Power led removed, on peut aussi enlever le LDO pour save plus d'energie)
+
+Ou ATmega328p
+Consommation: 0.25mA @ 2V 1Mhz
+https://www.mouser.fr/ProductDetail/Microchip-Technology-Atmel/ATMEGA328PB-AU?qs=jy4bLUHv09hbFONgGrqPbw==&mgh=1&vip=1
+Doc:
+https://www.electronicshub.org/burn-bootloader-on-atmega328/#:~:text=Now%20go%20to%20Tools%20%3E%20Programmer,will%20be%20programmed%20with%20bootloader.
+
+--
+
+Lecteur SD (copier le circuit):
+https://www.reichelt.com/fr/fr/arduino-module-de-carte-sd-ard-module-sd-p282683.html?PROVID=2810
+
+--
+
+Haut parleur 0.7 W 11x15 mm 8 Ohm:
+Consommation: 300 mA
+https://www.mouser.fr/ProductDetail/CUI-Devices/CMS-151135-078SP-67/?qs=w%2Fv1CP2dgqrECmIL5hlTxw%3D%3D
+
+Doc:
+https://electronics.stackexchange.com/questions/129277/how-many-volts-can-a-1-watt-8-ohm-speaker-take
+
+--
+
+Micro maybe un truc comme ça:
+Consommation ~0.5uA
+https://www.mouser.fr/ProductDetail/TDK-InvenSense/T3902/?qs=7MVldsJ5UayxNQLQM2Y8xA%3D%3D
