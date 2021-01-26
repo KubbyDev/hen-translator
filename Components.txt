@@ -1,5 +1,7 @@
 Boost en 3.3V
 https://www.mouser.fr/ProductDetail/Texas-Instruments/TPS613221ADBVR/?qs=W0yvOO0ixfEzYGaKZaJgrw%3D%3D
+Doc:
+https://electronics.stackexchange.com/questions/412730/boost-converter-tps61322-loop-stability-with-large-capacitors
 
 --
 
