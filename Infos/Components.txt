@@ -1,0 +1,83 @@
+Boost en 3.3V
+https://www.mouser.fr/ProductDetail/Texas-Instruments/TPS613221ADBVR/?qs=W0yvOO0ixfEzYGaKZaJgrw%3D%3D
+
+Doc:
+https://electronics.stackexchange.com/questions/412730/boost-converter-tps61322-loop-stability-with-large-capacitors
+
+--
+
+Pile bouton 3V 235mAh 20mm 
+https://data.energizer.com/pdfs/cr2032.pdf
+
+--
+
+ATmega328p
+Consommation: 1mA @ 3.3V 10Mhz
+https://www.mouser.fr/ProductDetail/Microchip-Technology-Atmel/ATMEGA328PB-AU?qs=jy4bLUHv09hbFONgGrqPbw==&mgh=1&vip=1
+
+Doc:
+https://www.electronicshub.org/burn-bootloader-on-atmega328/#:~:text=Now%20go%20to%20Tools%20%3E%20Programmer,will%20be%20programmed%20with%20bootloader.
+https://i.redd.it/bggdd9srui351.png
+
+--
+
+SD: power en 3.3V communication en SPI
+
+Doc:
+https://theorycircuit.com/wp-content/uploads/2018/01/micro-sd-pinout.png
+https://electronics.stackexchange.com/questions/37173/low-power-micro-sd-card-storage
+
+--
+
+Haut parleur 0.7 W 11x15 mm 8 Ohm:
+Consommation: 300 mA
+https://www.mouser.fr/ProductDetail/CUI-Devices/CMS-151135-078SP-67/?qs=w%2Fv1CP2dgqrECmIL5hlTxw%3D%3D
+
+Doc:
+https://electronics.stackexchange.com/questions/129277/how-many-volts-can-a-1-watt-8-ohm-speaker-take
+
+--
+
+Micro:
+Consommation ~0.9mA
+https://www.mouser.fr/ProductDetail/Infineon-Technologies/IM69D130V01XTSA1/?qs=W0yvOO0ixfHjr98Yrg6FIA%3D%3D
+
+--
+
+Quartz 10 MHz
+https://www.mouser.fr/ProductDetail/IQD/LFXTAL072402Bulk/?qs=P0I6NS6hZySbBQ4I4XjqOw%3D%3D
+
+--
+
+Inductor 4.7uH
+https://www.mouser.fr/ProductDetail/Taiyo-Yuden/LB3218T4R7M/?qs=I6KAKw0tg2y7zTa%2FS9VRYQ%3D%3D
+
+--
+
+Power switch + program switch
+
+--
+
+Resistors:
+https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW25123481FP?qs=2X6qfWcl%2FsaBFyu%252BQ896eg%3D%3D
+
+--
+
+A faire rapidement:
+gate resistance haut parleur et Sd    
+power switch
+
+A demander
+Led rouge resistance devant pin analog ou pas ?
+Crystal -> 10MHz = problem ? != arduino uno = 16 MHz
+quartz verifier que ca marche avec condos 22pF
+
+Demander disponibilite evo:
+mosfets
+capa 22pF
+capa 33uF
+
+Faire chez mes parents:
+verifier footprint sd
+condo 1mF trouver et mesurer
+program switch

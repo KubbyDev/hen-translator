@@ -1,0 +1,14 @@
+https://www.electronicshub.org/burn-bootloader-on-atmega328
+https://forum.arduino.cc/index.php?topic=282536.0
+
+SPI connection but Chip Select of the Arduino Uno should be connected to reset of the MCU
+Power with 5V instead of 3.3V (disconnect 3.3 and connect 5V from arduino)
+
+Bootloader burn procedure:
+- Switch the MCU power switch to off (the MCU must be disconnected from the battery)
+- Connect SS to RESET, MOSI to MOSI, MISO to MISO, SCK to SCK, 5V to 5V, GND to GND
+- Burn bootloader using Arduino IDE
+- Done
+
+To load a program:
+Same SPI connection with the switch turned off and upload like a regular arduino
