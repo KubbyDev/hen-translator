@@ -1,36 +1,16 @@
-Boost en 3.3V
-https://www.mouser.fr/ProductDetail/Texas-Instruments/TPS613221ADBVR/?qs=W0yvOO0ixfEzYGaKZaJgrw%3D%3D
-
-Doc:
-https://electronics.stackexchange.com/questions/412730/boost-converter-tps61322-loop-stability-with-large-capacitors
-
---
-
-Pile bouton 3V 235mAh 20mm 
-https://data.energizer.com/pdfs/cr2032.pdf
-
 --
 
 ATmega328p
-Consommation: 1mA @ 3.3V 10Mhz
-https://www.mouser.fr/ProductDetail/Microchip-Technology-Atmel/ATMEGA328PB-AU?qs=jy4bLUHv09hbFONgGrqPbw==&mgh=1&vip=1
+Consumption: 1mA @ 3.3V 10Mhz
+https://www.mouser.fr/ProductDetail/Microchip-Technology-Atmel/ATMEGA328P-AU/?qs=K8BHR703ZXiCmmgp6%2FGNmQ%3D%3D
 
 Doc:
-https://www.electronicshub.org/burn-bootloader-on-atmega328/#:~:text=Now%20go%20to%20Tools%20%3E%20Programmer,will%20be%20programmed%20with%20bootloader.
+https://www.electronicshub.org/burn-bootloader-on-atmega328
 https://i.redd.it/bggdd9srui351.png
 
 --
 
-SD: power en 3.3V communication en SPI
-
-Doc:
-https://theorycircuit.com/wp-content/uploads/2018/01/micro-sd-pinout.png
-https://electronics.stackexchange.com/questions/37173/low-power-micro-sd-card-storage
-
---
-
-Haut parleur 0.7 W 11x15 mm 8 Ohm:
-Consommation: 300 mA
+Speaker 0.7 W 11x15 mm 8 Ohm 300 mA:
 https://www.mouser.fr/ProductDetail/CUI-Devices/CMS-151135-078SP-67/?qs=w%2Fv1CP2dgqrECmIL5hlTxw%3D%3D
 
 Doc:
@@ -38,46 +18,102 @@ https://electronics.stackexchange.com/questions/129277/how-many-volts-can-a-1-wa
 
 --
 
-Micro:
-Consommation ~0.9mA
+Microphone:
 https://www.mouser.fr/ProductDetail/Infineon-Technologies/IM69D130V01XTSA1/?qs=W0yvOO0ixfHjr98Yrg6FIA%3D%3D
 
 --
 
-Quartz 10 MHz
+SD:
+https://fr.aliexpress.com/item/32870004360.html
+I already have connectors
+
+Doc:
+https://theorycircuit.com/wp-content/uploads/2018/01/micro-sd-pinout.png
+https://electronics.stackexchange.com/questions/37173/low-power-micro-sd-card-storage
+
+--
+
+Battery:
+
+1.5V AAA LR03 battery like this one:
+https://cdn.cnetcontent.com/74/ad/74ad7709-461b-44a1-be81-ca772331f680.pdf
+
+https://www.mouser.fr/ProductDetail/Keystone-Electronics/180/?qs=fAHHVMwC%252BbjK6GffUyrJzw%3D%3D
+https://www.mouser.fr/ProductDetail/Keystone-Electronics/5226/?qs=U32tdPngY%2FxGm5G8MlIF5w%3D%3D
+
+In stock:
+https://fr.farnell.com/jst-japan-solderless-terminals/b02b-pask-1/embase-male-pa-2v-dessus-2mm-avec/dp/1830734
+
+--
+
+3.3V Boost converter:
+https://www.mouser.fr/ProductDetail/Texas-Instruments/TPS613221ADBVR/?qs=W0yvOO0ixfEzYGaKZaJgrw%3D%3D
+
+Doc:
+https://electronics.stackexchange.com/questions/412730/boost-converter-tps61322-loop-stability-with-large-capacitors
+
+--
+
+Quartz 10 MHz:
 https://www.mouser.fr/ProductDetail/IQD/LFXTAL072402Bulk/?qs=P0I6NS6hZySbBQ4I4XjqOw%3D%3D
 
 --
 
-Inductor 4.7uH
-https://www.mouser.fr/ProductDetail/Taiyo-Yuden/LB3218T4R7M/?qs=I6KAKw0tg2y7zTa%2FS9VRYQ%3D%3D
+Mosfet:
+
+In stock:
+https://fr.farnell.com/infineon/irlml2402pbf/transistor-mosfet-canal-n-logique/dp/9102710?st=mosfet
 
 --
 
-Power switch + program switch
-
---
-
-Resistors:
+Resistor:
 https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW25123481FP?qs=2X6qfWcl%2FsaBFyu%252BQ896eg%3D%3D
 
+In stock:
+https://fr.farnell.com/multicomp/mcwr06x68r0ftl/resistance-thick-film-68ohm-1/dp/2447422
+https://fr.farnell.com/multicomp/mcwr06x1200ftl/resistance-thick-film-120-ohm/dp/2447240
+https://fr.farnell.com/multicomp/mcwr06x102-jtl/res-couche-epaisse-1k-5-0-1w-0603/dp/2694685
+https://fr.farnell.com/multicomp/mcwr06x1002ftl/res-couche-epaisse-10k-1-0-1w/dp/2447230
+
 --
 
-A faire rapidement:
-gate resistance haut parleur et Sd    
+Capacitor:
+https://www.mouser.fr/ProductDetail/Panasonic/ECA-0JM102BJ/?qs=sGAEpiMZZMvwFf0viD3Y3ffldXPLozayQ5gcyxJrqFc%3D
+
+In stock:
+https://fr.farnell.com/kemet/c0603c104z3vactu/condensateur-0-1-f-25v-y5v-0603/dp/2429362
+https://fr.farnell.com/multicomp/mc0603n220j201ct/cond-22pf-200v-5-c0g-np0-0603/dp/1855749
+
+--
+
+Inductor 4.7uH
+https://www.mouser.fr/ProductDetail/Laird-Performance-Materials/TYA2520104R7M-10/?qs=sPbYRqrBIVm2WgUnWK3gUQ%3D%3D
+
+--
+
+Led
+
+In stock:
+https://fr.farnell.com/kingbright/kp-2012ec/led-0805-rouge/dp/8529949?st=KP-2012
+
+--
+
+
+
+Capa 22uF
+program switch
 power switch
 
-A demander
-Led rouge resistance devant pin analog ou pas ?
-Crystal -> 10MHz = problem ? != arduino uno = 16 MHz
-quartz verifier que ca marche avec condos 22pF
 
-Demander disponibilite evo:
-mosfets
-capa 22pF
-capa 33uF
 
-Faire chez mes parents:
-verifier footprint sd
-condo 1mF trouver et mesurer
-program switch
+--
+
+Power switch
+https://www.mouser.fr/ProductDetail/CK/SK14D01G6/?qs=Gufeu08L%2Fl0F1TW9qwgs0A%3D%3D
+
+--
+
+Program switch
+https://www.mouser.fr/ProductDetail/CUI-Devices/DS04-254-1L-01BK/?qs=wnTfsH77Xs7SDKpvrDNVAg%3D%3D
+
+--
