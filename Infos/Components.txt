@@ -38,7 +38,7 @@ Battery:
 1.5V AAA LR03 battery like this one:
 https://cdn.cnetcontent.com/74/ad/74ad7709-461b-44a1-be81-ca772331f680.pdf
 
-https://www.mouser.fr/ProductDetail/Keystone-Electronics/180/?qs=fAHHVMwC%252BbjK6GffUyrJzw%3D%3D
+https://www.mouser.fr/ProductDetail/534-243/
 https://www.mouser.fr/ProductDetail/Keystone-Electronics/5226/?qs=U32tdPngY%2FxGm5G8MlIF5w%3D%3D
 
 In stock:
@@ -48,7 +48,7 @@ https://fr.farnell.com/jst-japan-solderless-terminals/pap-02v-s/boitier-connecte
 --
 
 3.3V Boost converter:
-https://www.mouser.fr/ProductDetail/Texas-Instruments/TPS613221ADBVR/?qs=W0yvOO0ixfEzYGaKZaJgrw%3D%3D
+https://www.mouser.fr/ProductDetail/595-TLV61225DCKR/
 
 Doc:
 https://electronics.stackexchange.com/questions/412730/boost-converter-tps61322-loop-stability-with-large-capacitors
@@ -78,7 +78,7 @@ https://www.mouser.fr/ProductDetail/CUI-Devices/DS04-254-1L-01BK/?qs=wnTfsH77Xs7
 --
 
 Resistor:
-https://www.mouser.fr/ProductDetail/Vishay-Dale/CRCW25123481FP?qs=2X6qfWcl%2FsaBFyu%252BQ896eg%3D%3D
+https://www.mouser.fr/ProductDetail/660-RK73H3ATTE3R48F/
 
 In stock:
 https://fr.farnell.com/multicomp/mcwr06x68r0ftl/resistance-thick-film-68ohm-1/dp/2447422
@@ -89,8 +89,8 @@ https://fr.farnell.com/multicomp/mcwr06x1002ftl/res-couche-epaisse-10k-1-0-1w/dp
 --
 
 Capacitor:
-https://www.mouser.fr/ProductDetail/Panasonic/ECA-0JM102BJ/?qs=sGAEpiMZZMvwFf0viD3Y3ffldXPLozayQ5gcyxJrqFc%3D
-https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL21X226MRQNNNE/?qs=%2Fha2pyFadujX%2Fm7wEoL0uMvAeQbmTxcAOUP89LplVmft3VVTJL%252BEXQ%3D%3D
+https://www.mouser.fr/ProductDetail/80-ESK108M6R3AG3AA/
+https://www.mouser.fr/ProductDetail/187-CL21A106KOQNNNG/
 
 In stock:
 https://fr.farnell.com/kemet/c0603c104z3vactu/condensateur-0-1-f-25v-y5v-0603/dp/2429362

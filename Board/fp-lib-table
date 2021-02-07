@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name Board)(type KiCad)(uri ${KIPRJMOD}/Footprints/Board.pretty)(options "")(descr ""))
+  (lib (name Libraries)(type KiCad)(uri ${KIPRJMOD}/Libraries.pretty)(options "")(descr ""))
 )
