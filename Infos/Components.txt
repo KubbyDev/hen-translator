@@ -42,7 +42,8 @@ https://www.mouser.fr/ProductDetail/Keystone-Electronics/180/?qs=fAHHVMwC%252Bbj
 https://www.mouser.fr/ProductDetail/Keystone-Electronics/5226/?qs=U32tdPngY%2FxGm5G8MlIF5w%3D%3D
 
 In stock:
-https://fr.farnell.com/jst-japan-solderless-terminals/b02b-pask-1/embase-male-pa-2v-dessus-2mm-avec/dp/1830734
+https://fr.farnell.com/jst-japan-solderless-terminals/s02b-pask-2/embase-male-pa-2voies-cote-2mm/dp/1830747
+https://fr.farnell.com/jst-japan-solderless-terminals/pap-02v-s/boitier-connecteur-pa-2voies-2mm/dp/1830726
 
 --
 
@@ -54,8 +55,8 @@ https://electronics.stackexchange.com/questions/412730/boost-converter-tps61322-
 
 --
 
-Quartz 10 MHz:
-https://www.mouser.fr/ProductDetail/IQD/LFXTAL072402Bulk/?qs=P0I6NS6hZySbBQ4I4XjqOw%3D%3D
+Crystal 10 MHz:
+https://www.mouser.fr/ProductDetail/Fox/FOXSLF-100/?qs=mzRxyRlhVduAqRI3qW6GSQ%3D%3D
 
 --
 
@@ -63,6 +64,16 @@ Mosfet:
 
 In stock:
 https://fr.farnell.com/infineon/irlml2402pbf/transistor-mosfet-canal-n-logique/dp/9102710?st=mosfet
+
+--
+
+Power switch
+https://www.mouser.fr/ProductDetail/E-Switch/RA11131121/?qs=sGAEpiMZZMtFyPk3yBMYYD67o5JC1%252B8sBC530hjv%2Fbk%3D
+
+--
+
+Program mode switch:
+https://www.mouser.fr/ProductDetail/CUI-Devices/DS04-254-1L-01BK/?qs=wnTfsH77Xs7SDKpvrDNVAg%3D%3D
 
 --
 
@@ -79,6 +90,7 @@ https://fr.farnell.com/multicomp/mcwr06x1002ftl/res-couche-epaisse-10k-1-0-1w/dp
 
 Capacitor:
 https://www.mouser.fr/ProductDetail/Panasonic/ECA-0JM102BJ/?qs=sGAEpiMZZMvwFf0viD3Y3ffldXPLozayQ5gcyxJrqFc%3D
+https://www.mouser.fr/ProductDetail/Samsung-Electro-Mechanics/CL21X226MRQNNNE/?qs=%2Fha2pyFadujX%2Fm7wEoL0uMvAeQbmTxcAOUP89LplVmft3VVTJL%252BEXQ%3D%3D
 
 In stock:
 https://fr.farnell.com/kemet/c0603c104z3vactu/condensateur-0-1-f-25v-y5v-0603/dp/2429362
@@ -95,25 +107,5 @@ Led
 
 In stock:
 https://fr.farnell.com/kingbright/kp-2012ec/led-0805-rouge/dp/8529949?st=KP-2012
-
---
-
-
-
-Capa 22uF
-program switch
-power switch
-
-
-
---
-
-Power switch
-https://www.mouser.fr/ProductDetail/CK/SK14D01G6/?qs=Gufeu08L%2Fl0F1TW9qwgs0A%3D%3D
-
---
-
-Program switch
-https://www.mouser.fr/ProductDetail/CUI-Devices/DS04-254-1L-01BK/?qs=wnTfsH77Xs7SDKpvrDNVAg%3D%3D
 
 --
