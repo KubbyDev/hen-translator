@@ -16,13 +16,13 @@ $EndDescr
 $Comp
 L Connector:Micro_SD_Card J1
 U 1 1 6010CE8A
-P 4700 5400
-F 0 "J1" H 4650 6117 50  0000 C CNN
-F 1 "Micro_SD_Card" H 4650 6026 50  0000 C CNN
-F 2 "Connector_Card:microSD_HC_Wuerth_693072010801" H 5850 5700 50  0001 C CNN
-F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 4700 5400 50  0001 C CNN
-	1    4700 5400
-	0    -1   -1   0   
+P 4650 5550
+F 0 "J1" H 4600 6267 50  0000 C CNN
+F 1 "Micro_SD_Card" H 4600 6176 50  0000 C CNN
+F 2 "Connector_Card:microSD_HC_Wuerth_693072010801" H 5800 5850 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 4650 5550 50  0001 C CNN
+	1    4650 5550
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:Speaker LS1
@@ -83,16 +83,14 @@ F 3 "~" H 9400 3300 50  0001 C CNN
 	1    9400 3300
 	1    0    0    -1  
 $EndComp
-Text Label 4800 6550 1    50   ~ 0
+Text Label 5800 5450 2    50   ~ 0
 SCK
-Text Label 5000 6550 1    50   ~ 0
+Text Label 5800 5250 2    50   ~ 0
 MISO
-Text Label 4600 6550 1    50   ~ 0
-MOSI
-Text Label 4500 6550 1    50   ~ 0
+Text Label 5800 5750 2    50   ~ 0
 CS
-NoConn ~ 4400 6300
-NoConn ~ 5100 6300
+NoConn ~ 5550 5850
+NoConn ~ 5550 5150
 Wire Wire Line
 	9200 2150 9500 2150
 Wire Wire Line
@@ -142,7 +140,7 @@ F 3 "" H 10100 1750 50  0001 C CNN
 	1    10100 1750
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 5300 4600
+NoConn ~ 3850 4950
 $Comp
 L Device:R R4
 U 1 1 6011E8C0
@@ -508,47 +506,28 @@ NoConn ~ 9200 2850
 Wire Wire Line
 	9800 5600 10150 5600
 $Comp
-L Device:Q_NMOS_GSD Q2
-U 1 1 60166A54
-P 5900 6400
-F 0 "Q2" V 6150 6350 50  0000 L CNN
-F 1 "Q_NMOS_GSD" V 6250 6150 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6100 6500 50  0001 C CNN
-F 3 "~" H 5900 6400 50  0001 C CNN
-	1    5900 6400
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R6
 U 1 1 60166A5A
-P 5900 6050
-F 0 "R6" H 5700 6100 50  0000 L CNN
-F 1 "1k" H 5700 6000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5830 6050 50  0001 C CNN
-F 3 "~" H 5900 6050 50  0001 C CNN
-	1    5900 6050
-	-1   0    0    1   
+P 5850 6450
+F 0 "R6" V 5650 6400 50  0000 L CNN
+F 1 "1k" V 5750 6400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5780 6450 50  0001 C CNN
+F 3 "~" H 5850 6450 50  0001 C CNN
+	1    5850 6450
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5900 5500 5900 5900
-Text Label 5900 5500 3    50   ~ 0
+	5300 6450 5700 6450
+Text Label 5300 6450 0    50   ~ 0
 SD_POWER
-Text GLabel 5700 6500 0    50   Output ~ 0
-SDGND
-Text GLabel 4900 6550 3    50   Input ~ 0
-SDGND
 Wire Wire Line
-	4500 6300 4500 6550
+	5550 5750 5800 5750
 Wire Wire Line
-	4600 6300 4600 6550
+	5550 5650 5800 5650
 Wire Wire Line
-	4700 6300 4700 6550
+	5550 5450 5800 5450
 Wire Wire Line
-	4800 6300 4800 6550
-Wire Wire Line
-	4900 6300 4900 6550
-Wire Wire Line
-	5000 6300 5000 6550
+	5550 5250 5800 5250
 Wire Wire Line
 	9200 3850 9650 3850
 Text Label 9650 3850 2    50   ~ 0
@@ -611,28 +590,6 @@ F 3 "~" H 5350 2600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5350 2750 5350 3100
-$Comp
-L power:+3.3V #PWR0113
-U 1 1 601C51BB
-P 4700 6550
-F 0 "#PWR0113" H 4700 6400 50  0001 C CNN
-F 1 "+3.3V" H 4715 6723 50  0000 C CNN
-F 2 "" H 4700 6550 50  0001 C CNN
-F 3 "" H 4700 6550 50  0001 C CNN
-	1    4700 6550
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 601CA5CE
-P 6100 6500
-F 0 "#PWR0114" H 6100 6250 50  0001 C CNN
-F 1 "GND" V 6105 6372 50  0000 R CNN
-F 2 "" H 6100 6500 50  0001 C CNN
-F 3 "" H 6100 6500 50  0001 C CNN
-	1    6100 6500
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 601DCBA6
@@ -997,4 +954,68 @@ Text Notes 10050 3650 0    50   ~ 0
 RX
 Text Notes 10050 3750 0    50   ~ 0
 TX\n
+$Comp
+L Device:C C9
+U 1 1 60216713
+P 6000 5700
+F 0 "C9" V 6150 5800 50  0000 C CNN
+F 1 "100nF" V 6150 5600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 5550 50  0001 C CNN
+F 3 "~" H 6000 5700 50  0001 C CNN
+	1    6000 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60216719
+P 6000 5850
+F 0 "#PWR0103" H 6000 5600 50  0001 C CNN
+F 1 "GND" H 6050 5700 50  0000 R CNN
+F 2 "" H 6000 5850 50  0001 C CNN
+F 3 "" H 6000 5850 50  0001 C CNN
+	1    6000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 60220953
+P 6300 6650
+F 0 "#PWR0104" H 6300 6400 50  0001 C CNN
+F 1 "GND" H 6350 6500 50  0000 R CNN
+F 2 "" H 6300 6650 50  0001 C CNN
+F 3 "" H 6300 6650 50  0001 C CNN
+	1    6300 6650
+	1    0    0    -1  
+$EndComp
+Text Label 5800 5650 2    50   ~ 0
+MOSI
+Wire Wire Line
+	5550 5550 6000 5550
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 6022DD16
+P 6000 5550
+F 0 "#PWR0105" H 6000 5400 50  0001 C CNN
+F 1 "+3.3V" H 6150 5650 50  0000 C CNN
+F 2 "" H 6000 5550 50  0001 C CNN
+F 3 "" H 6000 5550 50  0001 C CNN
+	1    6000 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6000 5550
+Wire Wire Line
+	6300 5350 6300 6250
+Wire Wire Line
+	5550 5350 6300 5350
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 60166A54
+P 6200 6450
+F 0 "Q2" V 6450 6400 50  0000 L CNN
+F 1 "Q_NMOS_GSD" V 6550 6200 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6400 6550 50  0001 C CNN
+F 3 "~" H 6200 6450 50  0001 C CNN
+	1    6200 6450
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
