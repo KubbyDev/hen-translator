@@ -4,3 +4,6 @@ Wav conversion:
 https://audio.online-convert.com/fr/convertir-en-wav
 
 A tester: correlation des signaux recus avec les sons pouvant etre joués par le socle ptdr
+
+Microphone:
+https://github.com/arduino/ArduinoCore-nRF528x-mbedos/blob/master/libraries/PDM/src/PDM.cpp
