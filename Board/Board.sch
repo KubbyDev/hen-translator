@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Hen translator"
-Date "2021-01-26"
-Rev "V1.0"
+Date "2021-03-10"
+Rev "V1.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -431,8 +431,6 @@ MCU_POWER
 Wire Wire Line
 	8350 5650 8550 5650
 Text GLabel 9400 3050 2    50   Input ~ 0
-MCU_POWER
-Text GLabel 8000 1950 0    50   Input ~ 0
 MCU_POWER
 Text GLabel 8600 1200 2    50   Input ~ 0
 MCU_POWER
@@ -1020,4 +1018,26 @@ Wire Wire Line
 	5800 5950 5800 6250
 NoConn ~ 4350 5450
 NoConn ~ 4350 5350
+$Comp
+L Device:C C10
+U 1 1 60491239
+P 7850 1950
+F 0 "C10" V 7598 1950 50  0000 C CNN
+F 1 "100nF" V 7689 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7888 1800 50  0001 C CNN
+F 3 "~" H 7850 1950 50  0001 C CNN
+	1    7850 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 6049123F
+P 7700 1950
+F 0 "#PWR015" H 7700 1700 50  0001 C CNN
+F 1 "GND" V 7705 1822 50  0000 R CNN
+F 2 "" H 7700 1950 50  0001 C CNN
+F 3 "" H 7700 1950 50  0001 C CNN
+	1    7700 1950
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
