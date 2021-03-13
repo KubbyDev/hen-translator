@@ -1,14 +1,26 @@
 https://www.electronicshub.org/burn-bootloader-on-atmega328
 https://forum.arduino.cc/index.php?topic=282536.0
+https://www.arduino.cc/en/Tutorial/BuiltInExamples/ArduinoToBreadboard/
 
 SPI connection but Chip Select of the Arduino Uno should be connected to reset of the MCU
 Power with 5V instead of 3.3V (disconnect 3.3 and connect 5V from arduino)
 
+To load programs onto the chip we can use an arduino uno:
+
 Bootloader burn procedure:
 - Switch the MCU power switch to off (the MCU must be disconnected from the battery)
 - Connect SS to RESET, MOSI to MOSI, MISO to MISO, SCK to SCK, 5V to 5V, GND to GND
-- Burn bootloader using Arduino IDE
+- Load the ArduinoISP example program onto the Arduino
+- Select Atmega328 8 MHz internal clock (might have to update your boards.txt) under Board
+- Select Arduino as ISP under Programmer
+- Tools > Burn Bootloader
 - Done
 
 To load a program:
-Same SPI connection with the switch turned off and upload like a regular arduino
+- Remove the ATmega238P from the arduino
+- Switch the MCU power switch to off (the MCU must be disconnected from the battery)
+- Connect RESET to RESET, RX to RX, TX to TX, 5V to 5V, GND to GND
+- Select Atmega328 8 MHz internal clock under Board
+- Select AVRISP mkII under Programmer (We now use the programmer chip on the UNO)
+- Click Upload
+- Done
