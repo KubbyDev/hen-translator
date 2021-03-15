@@ -1,5 +1,5 @@
 #define BATT_PIN A7
-#define AREF 3.3
+#define AVCC 5
 #define ADC_PRECISION 10
 
 void setup() {
@@ -9,7 +9,10 @@ void setup() {
 }
 
 void loop() {
-  float voltage = analogRead(BATT_PIN) * (AREF / (float)(1 << ADC_PRECISION));
+  float voltage = analogRead(BATT_PIN) * (AVCC / (float)(1 << ADC_PRECISION));
   Serial.println(voltage);
   delay(20);
 }
+
+// This test can be run with the board powered with an external 5V
+// It will send out the voltage read or pin A7 (pin 22) (can be plotter with serial plotter)

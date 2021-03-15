@@ -7,3 +7,37 @@ A tester: correlation des signaux recus avec les sons pouvant etre joués par le
 
 Microphone:
 https://github.com/arduino/ArduinoCore-nRF528x-mbedos/blob/master/libraries/PDM/src/PDM.cpp
+https://hackaday.com/2019/04/18/all-you-need-to-know-about-i2s/
+https://electronics.stackexchange.com/questions/404393/how-to-interface-to-a-pdm-audio-source
+https://www.ti.com/lit/an/sprac51/sprac51.pdf
+https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU7002.pdf
+https://electronics.stackexchange.com/questions/521799/how-can-i-convert-an-audio-pdm-bitstream-into-analog-form
+https://curiouser.cheshireeng.com/2015/01/16/pdm-in-a-tiny-cpu/
+https://www.youtube.com/watch?v=NwvEOKtFkFM
+https://www.youtube.com/watch?v=qNLvoSQCx60
+
+
+
+
+
+
+
+Read PDM on I2C port
+https://curiouser.cheshireeng.com/2015/01/16/pdm-in-a-tiny-cpu/
+
+Analog Microphone to opamp
+https://www.youtube.com/watch?v=NwvEOKtFkFM
+
+Condenser microphone
+
+PDM to analog to opamp
+
+Convert PDM to I2S and read I2S on I2C port
+https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU7002.pdf
+https://electronics.stackexchange.com/questions/404393/how-to-interface-to-a-pdm-audio-source
+https://www.ti.com/lit/an/sprac51/sprac51.pdf
+Trop cher et trop lent
+
+Low pass filter
+https://electronics.stackexchange.com/questions/521799/how-can-i-convert-an-audio-pdm-bitstream-into-analog-form
+Trop compliqué et pas assez reglable

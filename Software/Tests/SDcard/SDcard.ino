@@ -1,27 +1,32 @@
-#include <SPI.h>
 #include <SD.h>
 
 #define SD_CS 10
+#define LED_PIN 8
 
 File root;
+String res = "";
 
 void setup() {
 
-  Serial.begin(115200);
-  while (!Serial);
+  led_signal_once(2);
 
-  Serial.println("Initializing SD card...");
+  if (!SD.begin(SD_CS)) 
+    led_signal(1);
 
-  if (!SD.begin(SD_CS)) {
-    Serial.println("Initialization failed!");
-    while (1);
-  }
-  Serial.println("Initialization done.");
+  log("Starting SD card files listing");
 
   root = SD.open("/");
   printDirectory(root, 0);
 
-  Serial.println("Done!");
+  log("SD card files listing done");
+
+  File dataFile = SD.open("result.txt", FILE_WRITE);
+  if (!dataFile)
+    led_signal(2);
+  dataFile.println(res);
+  dataFile.close();
+
+  led_signal(5);
 }
 
 void printDirectory(File dir, int numTabs) {
@@ -30,18 +35,41 @@ void printDirectory(File dir, int numTabs) {
   while (entry = dir.openNextFile()) {
 
     for (uint8_t i = 0; i < numTabs; i++)
-      Serial.print("  ");
+      log("  ");
     
-    Serial.print(entry.name());
+    log(entry.name());
     if (entry.isDirectory()) {
-      Serial.println("/");
+      log("/\n");
       printDirectory(entry, numTabs + 1);
     } else {
       // files have sizes, directories do not
-      Serial.print("    ");
-      Serial.println(entry.size(), DEC);
+      log("    ");
+      log(String(entry.size()) + "\n");
     }
     entry.close();
+  }
+}
+
+void log(String msg) {
+  res += "[";
+  res += String(millis());
+  res += "] ";
+  res += msg;
+}
+
+void led_signal_once(int nb) {
+  for(int i = 0; i < nb; i++) {
+    digitalWrite(LED_PIN, HIGH);
+    delay(500);
+    digitalWrite(LED_PIN, LOW);
+    delay(500);
+  }
+}
+
+void led_signal(int nb) {
+  while(true) {
+    led_signal_once(nb);
+    delay(2000);
   }
 }
 
