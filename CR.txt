@@ -1,0 +1,42 @@
+Power management:
+- 1st idea: 3.0V button -> 5V. Problem: Power SD = 3.3V so 1 boost and 1 LDO
+- I saw atmega works from 1.8V to 5V (you just have to tweak the clock) so tried 3.3 to have one psu (boost from 3.0)
+- Also tried 1.8V because I saw LV SD but didn't find much info
+- Stayed to 3.3v, but then saw button = small current (speaker = 200mA). switched to 1.5 AAA still with boost to 3.3
+- Then I figured out that the boost converter I chose couldn't deal with the 200mA with 1.5V input voltage. I tried to find a more powerful converter but they are expensive
+- Idea: power the speaker directly from the battery. This change has a lot of benefits: no need to change the converter (I had already ordered it), no need for a resistor, more current available than if i chose a cheap regulator that I would have to run at its limits (so with a low efficiency)
+
+Crystal:
+- 1st idea: 16 MHz because arduino uno
+- But power management => 10 MHz
+- I had some problems described in the bootloader section. This lead me to some reseach and I found out there is a 8HMz internal oscillator so I will just use it
+
+Storage:
+- I used an SD card because its easy to load new wav files. 
+- Used a mosfet to cut power when not used (most of the time).
+- Did some research on EEPROMs but its just easier with SD.
+
+Microcontroller:
+- Classical setup with external crystal (removed later, see bootloader) and pullup resistor for the reset pin
+- Exposed SPI bus, reset pin and RX, TX to be able to burn the bootloader and load sketches
+- Added a switch between the power pins of the mcu and the 3.3v of the board to be able to program it with an arduino (5V) without putting 5v in the 3.3v components
+
+Speaker:
+- Simplest possible configuration: a large capacitor to smooth out spikes and a mosfet to control the frequencies. 
+- I can use a DAC and an amplifier if the sound is too bad.
+
+Microphone:
+- Simple configuration. Found a MEMS microphone that is very small and powered by 3.3V
+- I found out later that reading PDM is pretty hard. Found some solutions like hacking the SPI controller to read PDM with it, using a DAC to convert it to analog, using a low pass filter to filter out low SPL values etc...
+- Eventually I just changed the PDM microphone for an analog output microphone and an op amp. When the voltage goes above a certain threshold, a certain sound level has been reached
+
+First version of the PCB:
+- Aref fail
+- test points size 0.5mm = too small
+- The speaker draws too much current for the boost converter => new speaker power management
+- Can't read PDM => analog + opamp
+- Forgot pull up resistors for the SD card
+
+Bootloader and programming:
+- My first attempt at burning the bootloader didn't work because I was using the Arduino Uno bootloader but the chip on my board was using a 10 MHz crystal because 16 MHz is too fast with a 3.3V power supply. This didn't cause problems to burn the bootloader because SPI is synchronous, but then I couldn't upload sketches because the baud rates were wrong. I solved this by simply using the 8 MHz internal clock instead of my 10 MHz external crystal, and burning a bootloader made for a 8 MHz clock. I could hack a 10 MHz bootloader but now that I know the external crystal is not needed I prefer just removing it
+- (copy the Infos/Bootloader.txt file)

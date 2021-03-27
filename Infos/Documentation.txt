@@ -1,0 +1,26 @@
+The best resources are of course the datasheets but these are good additional resources
+
+ATmega328P:
+https://www.arduino.cc/en/uploads/Main/Arduino_Uno_Rev3-schematic.pdf
+https://www.arduino.cc/en/Tutorial/BuiltInExamples/ArduinoToBreadboard
+https://i.redd.it/bggdd9srui351.png
+
+Speaker:
+https://electronics.stackexchange.com/questions/129277/how-many-volts-can-a-1-watt-8-ohm-speaker-take
+
+Microphone:
+https://www.youtube.com/watch?v=NwvEOKtFkFM
+https://deveniringeson.com/decibels-db/#:~:text=Le%20dBu%20est%20une%20unit%C3%A9,ohms%20soumise%20%C3%A0%201%20mW.
+https://www.analog.com/en/analog-dialogue/articles/understanding-microphone-sensitivity.html
+
+Operational Amplifier:
+https://3cfeqx1hf82y3xcoull08ihx-wpengine.netdna-ssl.com/wp-content/uploads/2015/02/Op-Amps-for-MEMS-Microphone-Preamp-Circuits.pdf
+https://www.youtube.com/watch?v=kqCV-HGJc6A
+https://electronics.stackexchange.com/questions/286566/how-do-i-calculate-the-correct-value-for-a-capacitor-block-dc
+https://www.analog.com/media/en/technical-documentation/application-notes/AN-1165.pdf
+https://electronics.stackexchange.com/questions/255909/how-do-you-calculate-the-required-gain-for-an-electret-microphone-amplifier
+
+Sd connector:
+https://hackaday.io/project/164934-funkey-project-all-your-games-on-your-keychain/log/163628-schematics-sd-card
+https://theorycircuit.com/wp-content/uploads/2018/01/micro-sd-pinout.png
+

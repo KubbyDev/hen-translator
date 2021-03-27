@@ -1,35 +1,29 @@
 --
 
 ATmega328p
-Consumption: 1mA @ 3.3V 10Mhz
+Consumption: 1mA @ 3.3V 8Mhz
 https://www.mouser.fr/ProductDetail/Microchip-Technology-Atmel/ATMEGA328P-AU/?qs=K8BHR703ZXiCmmgp6%2FGNmQ%3D%3D
-
-Doc:
-https://www.electronicshub.org/burn-bootloader-on-atmega328
-https://i.redd.it/bggdd9srui351.png
 
 --
 
-Speaker 0.7 W 11x15 mm 8 Ohm 300 mA:
+Speaker 0.7 W 11x15 mm 8 Ohm:
 https://www.mouser.fr/ProductDetail/CUI-Devices/CMS-151135-078SP-67/?qs=w%2Fv1CP2dgqrECmIL5hlTxw%3D%3D
-
-Doc:
-https://electronics.stackexchange.com/questions/129277/how-many-volts-can-a-1-watt-8-ohm-speaker-take
 
 --
 
 Microphone:
-https://www.mouser.fr/ProductDetail/Infineon-Technologies/IM69D130V01XTSA1/?qs=W0yvOO0ixfHjr98Yrg6FIA%3D%3D
+https://fr.farnell.com/invensense/ics-40181/microphone-mems-analogique-40/dp/3369425
+
+--
+
+Operational Amplifier:
+https://fr.farnell.com/microchip/mcp6001ut-i-ot/amplificateur-op-cms-1mhz-1-8v/dp/8540845
 
 --
 
 SD:
 https://fr.aliexpress.com/item/32870004360.html
 I already have connectors
-
-Doc:
-https://theorycircuit.com/wp-content/uploads/2018/01/micro-sd-pinout.png
-https://electronics.stackexchange.com/questions/37173/low-power-micro-sd-card-storage
 
 --
 
@@ -50,14 +44,6 @@ https://fr.farnell.com/jst-japan-solderless-terminals/pap-02v-s/boitier-connecte
 3.3V Boost converter:
 https://www.mouser.fr/ProductDetail/595-TLV61225DCKR/
 
-Doc:
-https://electronics.stackexchange.com/questions/412730/boost-converter-tps61322-loop-stability-with-large-capacitors
-
---
-
-Crystal 10 MHz:
-https://www.mouser.fr/ProductDetail/Fox/FOXSLF-100/?qs=mzRxyRlhVduAqRI3qW6GSQ%3D%3D
-
 --
 
 Mosfet:
@@ -68,7 +54,7 @@ https://fr.farnell.com/infineon/irlml2402pbf/transistor-mosfet-canal-n-logique/d
 --
 
 Power switch
-https://www.mouser.fr/ProductDetail/E-Switch/RA11131121/?qs=sGAEpiMZZMtFyPk3yBMYYD67o5JC1%252B8sBC530hjv%2Fbk%3D
+https://fr.rs-online.com/web/p/interrupteurs-a-glissiere/1546147/
 
 --
 
@@ -78,13 +64,14 @@ https://www.mouser.fr/ProductDetail/CUI-Devices/DS04-254-1L-01BK/?qs=wnTfsH77Xs7
 --
 
 Resistor:
-https://www.mouser.fr/ProductDetail/660-RK73H3ATTE3R48F/
 
 In stock:
-https://fr.farnell.com/multicomp/mcwr06x68r0ftl/resistance-thick-film-68ohm-1/dp/2447422
 https://fr.farnell.com/multicomp/mcwr06x1200ftl/resistance-thick-film-120-ohm/dp/2447240
+https://fr.farnell.com/multicomp/mcwr06x5100ftl/res-couche-epaisse-510r-1-0-1w/dp/2447392
 https://fr.farnell.com/multicomp/mcwr06x102-jtl/res-couche-epaisse-1k-5-0-1w-0603/dp/2694685
 https://fr.farnell.com/multicomp/mcwr06x1002ftl/res-couche-epaisse-10k-1-0-1w/dp/2447230
+https://fr.farnell.com/multicomp/mcwr06x2102ftl/res-couche-epaisse-21k-1-0-1w/dp/2694768
+
 
 --
 
@@ -94,7 +81,7 @@ https://www.mouser.fr/ProductDetail/187-CL21A106KOQNNNG/
 
 In stock:
 https://fr.farnell.com/kemet/c0603c104z3vactu/condensateur-0-1-f-25v-y5v-0603/dp/2429362
-https://fr.farnell.com/multicomp/mc0603n220j201ct/cond-22pf-200v-5-c0g-np0-0603/dp/1855749
+https://fr.farnell.com/samsung-electro-mechanics/cl10a475ko8nnnc/condensateur-4-7uf-16v-mlcc-0603/dp/3013397
 
 --
 
