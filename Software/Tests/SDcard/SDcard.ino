@@ -1,7 +1,8 @@
 #include <SD.h>
 
 #define SD_CS 10
-#define LED_PIN 8
+#define LED_PIN A0
+#define SDPOWER_PIN 5
 
 File root;
 String res = "";
@@ -9,6 +10,10 @@ String res = "";
 void setup() {
 
   led_signal_once(2);
+
+  pinMode(SD_CS, OUTPUT);
+  pinMode(SDPOWER_PIN, OUTPUT);
+  digitalWrite(SDPOWER_PIN, HIGH);
 
   if (!SD.begin(SD_CS)) 
     led_signal(1);

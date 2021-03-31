@@ -19,6 +19,7 @@ https://www.youtube.com/watch?v=kqCV-HGJc6A
 https://electronics.stackexchange.com/questions/286566/how-do-i-calculate-the-correct-value-for-a-capacitor-block-dc
 https://www.analog.com/media/en/technical-documentation/application-notes/AN-1165.pdf
 https://electronics.stackexchange.com/questions/255909/how-do-you-calculate-the-required-gain-for-an-electret-microphone-amplifier
+http://ww1.microchip.com/downloads/en/Appnotes/LowBOM-Mic-Interf-Analog-Cond-OPAMP-Periph-DS00003631A.pdf
 
 Sd connector:
 https://hackaday.io/project/164934-funkey-project-all-your-games-on-your-keychain/log/163628-schematics-sd-card
