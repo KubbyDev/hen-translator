@@ -172,8 +172,8 @@ F 3 "~" H 5200 2600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5050 2600 4700 2600
-Text Label 4700 2600 0    50   ~ 0
+	5050 2600 5000 2600
+Text Label 4550 2600 0    50   ~ 0
 SPEAKER
 $Comp
 L power:GND #PWR03
@@ -334,8 +334,8 @@ F 3 "~" H 5650 6850 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	6200 6850 5800 6850
-Text Label 6200 6850 2    50   ~ 0
+	6350 6850 5850 6850
+Text Label 6350 6850 2    50   ~ 0
 SD_POWER
 Wire Wire Line
 	9200 4150 9650 4150
@@ -1095,7 +1095,7 @@ Wire Wire Line
 	4500 5100 4500 4900
 Wire Wire Line
 	1750 6200 1750 6250
-Text Notes 2600 5000 0    50   ~ 0
+Text Notes 2650 4950 0    50   ~ 0
 C5 is a DC blocking capacitor, \nit removes the 0.7V offset of \nthe output signal (it forms a \nhigh pass filter with R10, \nFcut = 66Hz).\n\nR4 and R10 set the gain of the\namplifier to -41 (inverting \nconfiguration).\n\nR8 and R9 add a DC offset \nto the output (of 3.3/2 V)\nto avoid clipping at GND
 Wire Wire Line
 	1750 5850 1750 5900
@@ -1132,4 +1132,60 @@ Wire Wire Line
 Text Label 9650 2850 2    50   ~ 0
 LED
 NoConn ~ 9200 3850
+Wire Wire Line
+	5850 6850 5850 6900
+Connection ~ 5850 6850
+Wire Wire Line
+	5850 6850 5800 6850
+$Comp
+L power:GND #PWR020
+U 1 1 60675156
+P 5850 7200
+F 0 "#PWR020" H 5850 6950 50  0001 C CNN
+F 1 "GND" H 5950 7050 50  0000 R CNN
+F 2 "" H 5850 7200 50  0001 C CNN
+F 3 "" H 5850 7200 50  0001 C CNN
+	1    5850 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 60672139
+P 5850 7050
+F 0 "R15" H 5700 7100 50  0000 L CNN
+F 1 "10K" H 5650 7000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5780 7050 50  0001 C CNN
+F 3 "~" H 5850 7050 50  0001 C CNN
+	1    5850 7050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 6067AD48
+P 5000 2950
+F 0 "#PWR018" H 5000 2700 50  0001 C CNN
+F 1 "GND" H 5100 2800 50  0000 R CNN
+F 2 "" H 5000 2950 50  0001 C CNN
+F 3 "" H 5000 2950 50  0001 C CNN
+	1    5000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 6067AD4E
+P 5000 2800
+F 0 "R5" H 4850 2850 50  0000 L CNN
+F 1 "10K" H 4800 2750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4930 2800 50  0001 C CNN
+F 3 "~" H 5000 2800 50  0001 C CNN
+	1    5000 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2600 5000 2650
+Connection ~ 5000 2600
+Wire Wire Line
+	5000 2600 4550 2600
+Text Notes 7100 6400 0    50   ~ 0
+To program the AtMega I use an arduino which uses 5V logic. \nBut the other components on the board can't handle 5V, so I\n use a switch to disconnect the MCU power rail from the main \n(3.3V) power rail only for programming
 $EndSCHEMATC
