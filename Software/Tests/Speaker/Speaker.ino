@@ -147,13 +147,19 @@ int duration[] = {
 };
 
 void setup() {
+
+  Serial.begin(115200);
+  while(!Serial);
+  Serial.println("Starting song");
+  
   for (int i = 0; i < sizeof(duration)/sizeof(int); i++) {
     int wait = duration[i] * songspeed;
     tone(BUZZER, notes[i], wait);
     delay(wait);
   }
+
+  Serial.println("Song done");
 }
 
 void loop() {
-
 }

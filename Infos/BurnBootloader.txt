@@ -9,17 +9,21 @@ To load programs onto the chip we can use an arduino uno:
 
 Bootloader burn procedure:
 - Switch the MCU power switch to off (the MCU must be disconnected from the battery)
-- Connect SS to RESET, MOSI to MOSI, MISO to MISO, SCK to SCK, 5V to 5V, GND to GND
-- Load the ArduinoISP example program onto the Arduino
+- Connect Pin 10 to RST, MOSI to MOSI, MISO to MISO, SCK to SCK, 5V to 5V, GND to GND
+- Load the ArduinoISP example program onto the Arduino (AVRISP mkII under Programmer and Arduino UNO under Board)
 - Select Atmega328 8 MHz internal clock (might have to update your boards.txt) under Board
 - Select Arduino as ISP under Programmer
 - Tools > Burn Bootloader
 - Done
 
 To load a program:
+Solution 1:
+- Keep exactly the setup of the bootloader burn
+- Click Sketch > Upload using programmer
+Solution 2:
 - Remove the ATmega238P from the arduino
 - Switch the MCU power switch to off (the MCU must be disconnected from the battery)
-- Connect RESET to RESET, RX to RX, TX to TX, 5V to 5V, GND to GND
+- Connect RESET to RST, RX to RX, TX to TX, 5V to 5V, GND to GND
 - Select Atmega328 8 MHz internal clock under Board
 - Select AVRISP mkII under Programmer (We now use the programmer chip on the UNO)
 - Click Upload

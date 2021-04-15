@@ -1,3 +1,4 @@
+#include <SPI.h>
 #include <SD.h>
 
 #define SD_CS 10
@@ -9,6 +10,7 @@ String res = "";
 
 void setup() {
 
+  pinMode(LED_PIN, OUTPUT);
   led_signal_once(2);
 
   pinMode(SD_CS, OUTPUT);
