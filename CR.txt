@@ -4,7 +4,7 @@ Power management:
 - Also tried 1.8V because I saw LV SD but didn't find much info
 - Stayed to 3.3v, but then saw button = small current (speaker = 200mA). switched to 1.5 AAA still with boost to 3.3
 - Then I figured out that the boost converter I chose couldn't deal with the 200mA with 1.5V input voltage. I tried to find a more powerful converter but they are expensive
-- Idea: power the speaker directly from the battery. This change has a lot of benefits: no need to change the converter (I had already ordered it), no need for a resistor, more current available than if i chose a cheap regulator that I would have to run at its limits (so with a low efficiency)
+- Solution: power the speaker directly from the battery. This change has a lot of benefits: no need to change the converter (I had already ordered it), no need for a resistor, more current available than if i chose a cheap regulator that I would have to run at its limits (so with a low efficiency). With this solution we get 0.3W at 1.5V. It's not ideal but it's good enough (Speaker = 0.7W)
 
 Crystal:
 - 1st idea: 16 MHz because arduino uno
@@ -15,6 +15,7 @@ Storage:
 - I used an SD card because its easy to load new wav files. 
 - Used a mosfet to cut power when not used (most of the time).
 - Did some research on EEPROMs but its just easier with SD.
+- Had some problems with SD library, doesn't seem to work with non HC SD cards. Forced to use SDHC, but I'll try to make it compatible
 
 Microcontroller:
 - Classical setup with external crystal (removed later, see bootloader) and pullup resistor for the reset pin
@@ -24,11 +25,13 @@ Microcontroller:
 Speaker:
 - Simplest possible configuration: a large capacitor to smooth out spikes and a mosfet to control the frequencies. 
 - I can use a DAC and an amplifier if the sound is too bad.
+- Having some problems with TMRPCM library, might have to use more a basic one or write my own
 
 Microphone:
 - Simple configuration. Found a MEMS microphone that is very small and powered by 3.3V
 - I found out later that reading PDM is pretty hard. Found some solutions like hacking the SPI controller to read PDM with it, using a DAC to convert it to analog, using a low pass filter to filter out low SPL values etc...
 - Eventually I just changed the PDM microphone for an analog output microphone and an op amp. When the voltage goes above a certain threshold, a certain sound level has been reached
+- Works just fine but very hard to solder. Might have to adjust the gain, 10 is too low
 
 First version of the PCB:
 - Aref fail

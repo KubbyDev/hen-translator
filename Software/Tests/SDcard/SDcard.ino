@@ -1,7 +1,6 @@
-#include <SPI.h>
 #include <SD.h>
 
-#define SD_CS 10
+#define SDCS_PIN 10
 #define LED_PIN A0
 #define SDPOWER_PIN 5
 
@@ -10,14 +9,19 @@ String res = "";
 
 void setup() {
 
-  pinMode(LED_PIN, OUTPUT);
   led_signal_once(2);
+  
+  pinMode(SPI_MISO_PIN, INPUT);
+  pinMode(SPI_MOSI_PIN, OUTPUT);
+  pinMode(SPI_SCK_PIN, OUTPUT);
+  pinMode(LED_PIN, OUTPUT);
 
-  pinMode(SD_CS, OUTPUT);
+  pinMode(SDCS_PIN, OUTPUT);
   pinMode(SDPOWER_PIN, OUTPUT);
   digitalWrite(SDPOWER_PIN, HIGH);
+  digitalWrite(SDCS_PIN, HIGH);
 
-  if (!SD.begin(SD_CS)) 
+  if (!SD.begin(SDCS_PIN)) 
     led_signal(1);
 
   log("Starting SD card files listing");
@@ -67,17 +71,16 @@ void log(String msg) {
 void led_signal_once(int nb) {
   for(int i = 0; i < nb; i++) {
     digitalWrite(LED_PIN, HIGH);
-    delay(500);
+    delay(200);
     digitalWrite(LED_PIN, LOW);
-    delay(500);
+    delay(400);
   }
+  delay(1000);
 }
 
 void led_signal(int nb) {
-  while(true) {
+  while(true)
     led_signal_once(nb);
-    delay(2000);
-  }
 }
 
 void loop() {
