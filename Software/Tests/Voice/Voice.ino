@@ -9,14 +9,9 @@
 
 // Audio files must follow these rules:
 // WAV format
-// 8-bit sample size
+// 8 bit unsigned PCM samples
 // 8-32khz sample rate
 // mono
-
-
-// Doesn't work for the moment, IDK why :(
-
-
 
 void setup(){
 
@@ -26,7 +21,7 @@ void setup(){
 
   TMRpcm tmrpcm;
   tmrpcm.speakerPin = SPEAKER_PIN;
-  tmrpcm.setVolume(4);
+  tmrpcm.setVolume(5);
   tmrpcm.quality(1);
   
   led_signal_once(2);
