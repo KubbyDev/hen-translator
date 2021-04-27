@@ -21,7 +21,7 @@ void setup(){
 
   TMRpcm tmrpcm;
   tmrpcm.speakerPin = SPEAKER_PIN;
-  tmrpcm.setVolume(5);
+  tmrpcm.setVolume(4);
   tmrpcm.quality(1);
   
   led_signal_once(2);
