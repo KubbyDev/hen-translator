@@ -41,7 +41,7 @@ But then I saw that the AtMega328p works from 1.8V to 5.5V, so I decided to use 
 
 Later I realized I had another problem: the speaker draws 200 mA at 3.3V which a button battery can't provide. So I switched to a 1.5V AAA battery. But 200mA is also too much for the cheap boost converter I had found, and better boost converters are a lot more expensive. So I just connected the speaker directly to the battery so I don't need to change the converter (I had already ordered it), I can remove the resistor I had to limit current at 3.3V and I can have a higher current than if I chose a cheap regulator that I would have to run at its limits (so with a low efficiency). With this solution I get 0.3W at 1.5V.
 
-The final change I made was switching to two 1/2 AAA 1.2V batteries. They take the same space as the 1.5V battery but have a combined output of 2.4V which forces 0.7W to pass through the speaker.
+I could switch to two 1/2 AAA 1.2V batteries. They take the same space as the 1.5V battery but have a combined output of 2.4V which forces 0.7W to pass through the speaker. But they are very expensive and the small increase in volume is not worth it.
 
 ##### Crystal oscillator
 
@@ -76,7 +76,7 @@ The program has 3 things to do:
 - when it detects one, play a random wav file from the SD card
 - monitor the battery voltage and alert with the led or the speaker when power is too low
 
-Currently I have tested all the parts independently and everything works except the sound levels are too low with wav files (not with raw tones) and the gain of the microphone is too low (but usable. I will still change it).
+Currently I have tested all the parts independently and everything works except the sound levels are too low with wav files (not with raw tones) and the gain of the microphone is a bit low (but usable).
 
 ##### Speaker control
 
