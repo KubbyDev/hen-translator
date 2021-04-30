@@ -1,13 +1,13 @@
 # Hen Translator
 
 The goal of this project is to make a small module that can be attached around the neck of a chicken. This module listens for chicken sounds and "translates" them (it says a random sentence with a synthesized voice).
-This idea is dumb, I know, but I leaned a lot doing it.
+This idea is dumb, I know, but I learned a lot doing it.
 
 ## Demo
 
 The electronics are working, the mechanical part is finished too. On the software part I tested every part independently. The only thing left to do is fixing a sound level problem and writing the complete program.
 
-(TODO: Video demo)
+[![Demo](https://res.cloudinary.com/marcomontalbano/image/upload/v1619778146/video_to_markdown/images/youtube--In1Kdy9nxgg-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=In1Kdy9nxgg "Demo")
 ![The PCB](https://i.imgur.com/riOErjP.jpg)
 
 ## How does it work?
@@ -101,7 +101,8 @@ The collar is just a box holding the board and the battery with a power switch a
 
 The stand is based on a chicken I found on Thingyverse. The interior is hollow, and contains a PCB (the same PCB, but without microphone because it's not needed), a battery, a power switch and a button to trigger a chicken sound. The button is an end of travel sensor that we can trigger by pushing on the thingy on the head of the chicken.
 
-(TODO: pictures)
+![Collar](https://i.imgur.com/UVEf1mq.jpeg)
+(TODO: photo of the stand)
 
 ## Things I should change
 
