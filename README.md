@@ -5,8 +5,6 @@ This idea is dumb, I know, but I learned a lot doing it.
 
 ## Demo
 
-The electronics are working, the mechanical part is finished too. On the software part I tested every part independently. The only thing left to do is fixing a sound level problem and writing the complete program.
-
 [![Demo](https://res.cloudinary.com/marcomontalbano/image/upload/v1619778146/video_to_markdown/images/youtube--In1Kdy9nxgg-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=In1Kdy9nxgg "Demo")
 ![The PCB](https://i.imgur.com/riOErjP.jpg)
 
@@ -76,11 +74,9 @@ The program has 3 things to do:
 - when it detects one, play a random wav file from the SD card
 - monitor the battery voltage and alert with the led or the speaker when power is too low
 
-Currently I have tested all the parts independently and everything works except the sound levels are too low with wav files (not with raw tones) and the gain of the microphone is a bit low (but usable).
-
 ##### Speaker control
 
-To play wav files I use the TMRpcm library. It works but this library is very complicated and I have some sound level problems. I might have to write my own player.
+To play wav files I use the TMRpcm library. It's easy to use because my use case is standard.
 
 ##### SD card reading
 
