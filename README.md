@@ -97,8 +97,7 @@ The collar is just a box holding the board and the battery with a power switch a
 
 The stand is based on a chicken I found on Thingyverse. The interior is hollow, and contains a PCB (the same PCB, but without microphone because it's not needed), a battery, a power switch and a button to trigger a chicken sound. The button is an end of travel sensor that we can trigger by pushing on the thingy on the head of the chicken.
 
-![Collar](https://i.imgur.com/UVEf1mq.jpeg)
-(TODO: photo of the stand)
+![Stand](https://i.imgur.com/jeLHt7v.jpg)
 
 ## Things I should change
 
