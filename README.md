@@ -8,6 +8,11 @@ This idea is dumb, I know, but I learned a lot doing it.
 [![Demo](https://res.cloudinary.com/marcomontalbano/image/upload/v1619778146/video_to_markdown/images/youtube--In1Kdy9nxgg-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=In1Kdy9nxgg "Demo")
 ![The PCB](https://i.imgur.com/riOErjP.jpg)
 
+## Things I should change
+
+- The main problem in this design is the lack of some kind of sound recognition. Just looking at the sound level is not enough to trigger the translation only when the chicken makes noises. I originally planned to try to use FFTs to make a simple recognition system but the AtMega328p is too underpowered and has far too little memory to work with. If I make a V2, I will probably go for a much more powerful STM32 or even a Linux system.
+- The speaker is not powerful enough. This should be fairly easy to change but I have to keep in mind that it will also draw more power.
+
 ## How does it work?
 
 ### Electronics
@@ -98,8 +103,3 @@ The collar is just a box holding the board and the battery with a power switch a
 The stand is based on a chicken I found on Thingyverse. The interior is hollow, and contains a PCB (the same PCB, but without microphone because it's not needed), a battery, a power switch and a button to trigger a chicken sound. The button is an end of travel sensor that we can trigger by pushing on the thingy on the head of the chicken.
 
 ![Stand](https://i.imgur.com/jeLHt7v.jpg)
-
-## Things I should change
-
-- The main problem in this design is the lack of some kind of sound recognition. Just looking at the sound level is not enough to trigger the translation only when the chicken makes noises. I originally planned to try to use FFTs to make a simple recognition system but the AtMega328p is too underpowered and has far too little memory to work with. If I make a V2, I will probably go for a much more powerful STM32 or even a Linux system.
-- The speaker is not powerful enough. This should be fairly easy to change but I have to keep in mind that it will also draw more power.
