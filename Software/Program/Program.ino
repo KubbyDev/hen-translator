@@ -13,7 +13,7 @@
 #define BATT_LOW 1.0
 #define BATT_VERYLOW 0.9
 
-#define THRESHOLD 2.2
+#define THRESHOLD 2.4
 
 void setup() {
   
